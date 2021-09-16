@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
-import 'package:ssf/config/style.dart';
 import 'package:ssf/pages/use_provider/count_widget.dart';
 import 'package:ssf/providers/use_provider/count_widget_provider.dart';
 

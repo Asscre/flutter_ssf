@@ -5,8 +5,6 @@ import 'package:ssf/pages/use_dio/use_dio_page.dart';
 import 'package:ssf/pages/use_provider/use_provider_page.dart';
 import 'package:ssf/pages/use_router/use_router_page.dart';
 
-import 'moduler/moduler_page.dart';
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
