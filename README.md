@@ -70,3 +70,23 @@ lib
 3. ### flutter_screenutil：屏幕适配
 
    > 了解屏幕适配的基本原理，如何调用全局context for root# flutter_ssf
+   
+### 三、学习资料汇总
+
+- [Dart中文网](https://dart.cn/guides)
+- [Material风格文字、icon](https://fonts.google.com/?selected=Material+Icons:account_balance)
+- [Flutter中文网](https://flutter.cn/)
+- [《Flutter实战》电子书](https://book.flutterchina.club/)
+- [在线DartPad](https://dartpad.cn/)
+- [Flutterx](https://flutterx.com/)
+- [lottiefiles](https://lottiefiles.com/)
+
+
+### 四、实用技巧
+
+- 一键生成 Iconfont Dart类
+  新建一个浏览器标签，把下面👇复制到**网站**一行
+  保存后，打开Iconfont官网项目中，点击标签，自动下载Dart类，copy到自己的项目引入即可
+   ```javascript 
+      javascript:function download(filename, text) {  var element = document.createElement('a');  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));  element.setAttribute('download', filename);  element.style.display = 'none';  document.body.appendChild(element);  element.click();  document.body.removeChild(element);}function toHump(name) {name = name.replace(/\s+/g,"-");    return name.replace(/\-(\w)/g, function(all, letter){        return letter.toUpperCase();    });}function getFlutterClass(){var str = "import 'package:flutter/widgets.dart';\r\n\r\n";str += "class IconFontIcons {\r\n";var arr = document.querySelectorAll(".icon-item");for (var i = arr.length - 1; i >= 0; i--) {var item = arr[i];var item_name = toHump(item.querySelectorAll(".icon-code")[1].textContent);var item_code = item.querySelectorAll(".icon-code")[0].textContent.replace(/\&\#/g,"0");item_code = item_code.replace(/\;/g,"");str += "    static const IconData "+item_name+" = IconData("+item_code+",fontFamily:'IconFontIcons');";str += "\r\n";}str += "}";return str;}  download("IconFontIcons.dart",getFlutterClass());
+   ```
