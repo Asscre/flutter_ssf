@@ -5,6 +5,8 @@ import 'package:ssf/pages/use_dio/use_dio_page.dart';
 import 'package:ssf/pages/use_provider/use_provider_page.dart';
 import 'package:ssf/pages/use_router/use_router_page.dart';
 
+/// HomePage用于项目基本页面的设置
+/// 例如首页底部栏，项目页面划分等
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 

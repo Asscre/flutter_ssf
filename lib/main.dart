@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ssf/pages/index_page.dart';
-import 'package:ssf/routes/router_config.dart';
+import 'package:ssf/routes/custom_router.dart';
 
 /// Author: Asscre
 /// Editing time: 2020/11/12
 void main() {
-  RouterConfig router = RouterConfig();
+  CustomRouter router = CustomRouter();
   router.initRouters();
 
   if (Platform.isAndroid) {

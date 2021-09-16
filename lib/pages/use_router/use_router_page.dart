@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ssf/routes/router_config.dart';
+import 'package:ssf/routes/custom_router.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+/// Custom Router基本用法
 class UseRouterPage extends StatelessWidget {
   const UseRouterPage({Key? key}) : super(key: key);
 
@@ -35,7 +36,7 @@ class UseRouterPage extends StatelessWidget {
   /// 适当的抽离我们的组件，让整个页面更加的清晰
   Widget _goToHowUseRouterPage(BuildContext context) {
     return TextButton(
-      onPressed: () => RouterConfig.toPage(
+      onPressed: () => CustomRouter.toPage(
         context,
         'asscre/HowUseRouterPage',
         arguments: 'This is param for AsscrePage',
