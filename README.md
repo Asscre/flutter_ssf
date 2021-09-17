@@ -1,4 +1,4 @@
-# SSF
+# 🔥🔥 flutter_ssf 🔥🔥
 **flutter_ssf**是一个推崇使用Provider、Custom Router、dio结合的MVVM开发模式设计的Flutter应用生产级开发脚手架。
 
 **flutter_ssf**只提供基本的参照组件，所以具备几乎所有业务场景中拿来即用的特性。
@@ -73,13 +73,13 @@ lib
    
 ### 三、学习资料汇总
 
-- [Dart中文网](https://dart.cn/guides)
-- [Material风格文字、icon](https://fonts.google.com/?selected=Material+Icons:account_balance)
-- [Flutter中文网](https://flutter.cn/)
-- [《Flutter实战》电子书](https://book.flutterchina.club/)
-- [在线DartPad](https://dartpad.cn/)
-- [Flutterx](https://flutterx.com/)
-- [lottiefiles](https://lottiefiles.com/)
+- [Dart中文网](https://dart.cn/guides) 基础开始，一切从语言开始！
+- [Material风格文字、icon](https://fonts.google.com/?selected=Material+Icons:account_balance) 还在编辑器看Icons？你out了，看这！
+- [Flutter中文网](https://flutter.cn/) 官网的就是最好的！
+- [《Flutter实战》电子书](https://book.flutterchina.club/) 新手入门必看
+- [DartPad](https://dartpad.cn/) dart在线编辑器，你的所想，即可呈现
+- [Flutterx](https://flutterx.com/) Flutter资源分享网址，没有灵感？看这就对了！
+- [lottiefiles](https://lottiefiles.com/) Lottie动画，让你的app更加的炫酷
 
 
 ### 四、实用技巧
@@ -91,6 +91,8 @@ lib
       javascript:function download(filename, text) {  var element = document.createElement('a');  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));  element.setAttribute('download', filename);  element.style.display = 'none';  document.body.appendChild(element);  element.click();  document.body.removeChild(element);}function toHump(name) {name = name.replace(/\s+/g,"-");    return name.replace(/\-(\w)/g, function(all, letter){        return letter.toUpperCase();    });}function getFlutterClass(){var str = "import 'package:flutter/widgets.dart';\r\n\r\n";str += "class IconFontIcons {\r\n";var arr = document.querySelectorAll(".icon-item");for (var i = arr.length - 1; i >= 0; i--) {var item = arr[i];var item_name = toHump(item.querySelectorAll(".icon-code")[1].textContent);var item_code = item.querySelectorAll(".icon-code")[0].textContent.replace(/\&\#/g,"0");item_code = item_code.replace(/\;/g,"");str += "    static const IconData "+item_name+" = IconData("+item_code+",fontFamily:'IconFontIcons');";str += "\r\n";}str += "}";return str;}  download("IconFontIcons.dart",getFlutterClass());
    ```
 
+- Flutter 版本管理工具🔥🔥
+   [fvm](https://fvm.app/) 解决我们不通项目之间不通版本的问题
 ### 五、联系我
 
   [掘金博客](https://juejin.cn/user/870468939942311)
