@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ssf/common/page/not_find_page.dart';
 import 'package:ssf/pages/home_pege.dart';
+import 'package:ssf/routes/routes_name.dart';
 import 'package:ssf/routes/use_router.dart';
 
 /// CustomRouter
@@ -8,7 +9,7 @@ import 'package:ssf/routes/use_router.dart';
 /// 当然，你也可以在这里设置跳转动画
 class CustomRouter {
   static Map<String, Function> routes = {
-    "/": (context) => const HomePage(),
+    RoutesName.Root: (context) => const HomePage(),
   };
 
   /// 在这里，你可以随意添加你所划分的模块路由

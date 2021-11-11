@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ssf/routes/custom_router.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ssf/routes/routes_name.dart';
 
 /// Custom Router基本用法
 class UseRouterPage extends StatelessWidget {
@@ -38,7 +39,7 @@ class UseRouterPage extends StatelessWidget {
     return TextButton(
       onPressed: () => CustomRouter.toPage(
         context,
-        'asscre/HowUseRouterPage',
+        RoutesName.HowUseRouterPage,
         arguments: 'This is param for AsscrePage',
       ),
       child: Text(
