@@ -10,8 +10,8 @@ class UseDioPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<UseDioProvider>(
       create: (_) => UseDioProvider(),
-      builder: (BuildContext context, Widget? child) {
-        return Column(
+      child: Center(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -21,12 +21,31 @@ class UseDioPage extends StatelessWidget {
                 fontSize: 32.sp,
               ),
             ),
-            TextButton(
-              onPressed: () => context.read<UseDioProvider>().getTestData(),
-              child: const Text('test dio'),
-            ),
+            _getPageDataWidget(),
+            _apiResultWidget(),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _getPageDataWidget() {
+    return Builder(
+      builder: (BuildContext ctx) {
+        return TextButton(
+          onPressed: () => ctx.read<UseDioProvider>().getTestData(),
+          child: const Text('test dio'),
         );
+      },
+    );
+  }
+
+  Widget _apiResultWidget() {
+    return Builder(
+      builder: (BuildContext ctx) {
+        String _t = ctx.watch<UseDioProvider>().apiResult;
+        DateTime _d = DateTime.now();
+        return _t.isNotEmpty ? Text(_t + _d.toString()) : Container();
       },
     );
   }
