@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ssf/config/style.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ssf/config/style.dart';
 import 'package:ssf/pages/use_dio/use_dio_page.dart';
 import 'package:ssf/pages/use_provider/use_provider_page.dart';
 import 'package:ssf/pages/use_router/use_router_page.dart';
@@ -37,21 +37,21 @@ class _HomePageState extends State<HomePage> {
         label: '',
         icon: Icon(
           Icons.home_outlined,
-          size: 38.sp,
+          size: 28.sp,
         ),
       ),
       BottomNavigationBarItem(
         label: '',
         icon: Icon(
           Icons.chat_outlined,
-          size: 38.sp,
+          size: 28.sp,
         ),
       ),
       BottomNavigationBarItem(
         label: '',
         icon: Icon(
           Icons.privacy_tip_outlined,
-          size: 38.sp,
+          size: 28.sp,
         ),
       ),
     ];

@@ -22,7 +22,7 @@ class _IndexPageState extends State<IndexPage> {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      builder: () => const HomePage(),
+      builder: (BuildContext context, Widget? child) => const HomePage(),
     );
   }
 }

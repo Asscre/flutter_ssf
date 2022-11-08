@@ -2,19 +2,15 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ssf/pages/index_page.dart';
-import 'package:ssf/routes/custom_router.dart';
+import 'package:ssf/routes/index_router.dart';
 
 /// Author: Asscre
 /// Editing time: 2020/11/12
 void main() {
-  CustomRouter router = CustomRouter();
-  router.initRouters();
-
   if (Platform.isAndroid) {
     //设置Android头部的导航栏透明
     SystemUiOverlayStyle systemUiOverlayStyle =
-    const SystemUiOverlayStyle(statusBarColor: Colors.transparent);
+        const SystemUiOverlayStyle(statusBarColor: Colors.transparent);
     SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
   }
 
@@ -28,14 +24,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'SSF',
       debugShowCheckedModeBanner: false,
+      routerConfig: IndexRouter.router,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const IndexPage(),
     );
   }
 }

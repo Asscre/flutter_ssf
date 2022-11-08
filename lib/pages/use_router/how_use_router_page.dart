@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ssf/config/style.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ssf/config/style.dart';
 
 /// Congratulations on learning to use Router.
 /// Reasonable route planning can make our project more clear.
@@ -33,7 +33,7 @@ class HowUseRouterPage extends StatelessWidget {
             '恭喜你学会了使用Router。',
             style: TextStyle(
               color: Style.orange,
-              fontSize: 32.sp,
+              fontSize: 26.sp,
             ),
           ),
           SizedBox(height: 30.h),
@@ -41,7 +41,7 @@ class HowUseRouterPage extends StatelessWidget {
             '合理规划路由可以使项目变得更加清晰明了。',
             style: TextStyle(
               color: Style.green,
-              fontSize: 20.sp,
+              fontSize: 18.sp,
             ),
           ),
           SizedBox(height: 30.h),
@@ -53,7 +53,7 @@ class HowUseRouterPage extends StatelessWidget {
                   text: incParam,
                   style: TextStyle(
                     color: Style.red,
-                    fontSize: 20.sp,
+                    fontSize: 14.sp,
                   ),
                 ),
               ],
